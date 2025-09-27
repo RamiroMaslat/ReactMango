@@ -1,4 +1,4 @@
-import carritoImg from './NavBar/imgCarrito.png'
+import carritoImg from './imgCarrito.png'
 
 function CartiWidget() {  
 

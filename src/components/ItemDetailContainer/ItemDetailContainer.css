@@ -1,0 +1,23 @@
+.itemDetailContainer-body{
+    display: flex;
+    justify-content: center;
+}
+
+.idc-card{
+    height: 500px;
+    width: 500px;
+}
+
+.idc-card__title{
+    font-size: 40px;
+}
+
+.idc-card__img-top{
+    height: 300px;
+    width: 300px;
+}
+
+.card-description{
+    color: #323137;
+}
+

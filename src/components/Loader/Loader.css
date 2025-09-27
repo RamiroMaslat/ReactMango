@@ -1,0 +1,27 @@
+.loader-container{
+    margin-top: 45px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.loader-container p {
+    font-size: 20px;
+    
+}
+
+.loader {   
+  
+    border: 6px solid #323137;
+    border-radius: 50%;
+    border-top: 6px solid #dfa10c;
+    width: 50px;
+    height: 50px;
+    animation: spinner 0.8s linear infinite;
+ }
+ 
+ @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+ }

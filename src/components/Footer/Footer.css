@@ -1,0 +1,92 @@
+.footer {
+    display: flex;    
+    background-color: #323137;
+    position: fixed;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    
+}
+
+.footerPayments {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;    
+}
+
+.creditPayment, .debitPayment, .mpPayment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 13%;
+}
+
+.debitPayment p, .creditPayment p {
+    font-size: 80%;
+}
+
+.creditPayment img {
+    width: 65%;
+    
+}
+
+.debitPayment img {
+    width: 70%;
+   
+}
+
+.mpPayment img {
+    width: 95%;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    width: 41%;  
+    
+}
+
+.footerSocial {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.footerSocial a {
+   display: flex;
+   justify-content: space-evenly;
+   width: 20%;
+}
+
+.footerSocial img {
+    width: 50%;  
+      
+}
+
+.whatsApp:hover {
+    background-color:#25d366;
+    transition: all 0.3s;
+    border-radius: 30px;
+    padding: 4px;
+}
+.faceBook:hover {
+    transition: all .3s;
+    background-color: #2f55a4;
+    border-radius: 30px;
+    padding: 1px;
+}
+.instagram:hover {
+    transition: .3s;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    border-radius: 30px;
+    padding: 3px;
+}
+
+footer p {
+    color: white; 
+    font-size: 80%;   
+}

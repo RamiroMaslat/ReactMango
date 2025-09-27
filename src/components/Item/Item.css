@@ -1,0 +1,36 @@
+.item-card {
+    margin-top: 30px;
+    width: 300px;
+    height: 400px;
+    z-index: 0;
+    background-color: #88932a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 2px solid #323137;
+}
+
+.item-card h3 {
+    color: #323137;
+}
+
+.card-price {
+ color: #323137;
+ font-weight: 700;   
+}
+
+
+.card-img-top {
+    width: 200px;
+    height: 210px;
+    border-radius: 30px;
+    margin-top: 10px;
+    border: 1px solid #dfa10c;
+    object-fit: cover;
+   
+}
+.card-button{
+    cursor: pointer;
+}
