@@ -1,11 +1,13 @@
 import { useParams } from "react-router";
-import { getProductById } from "../../data/mockAPI";
-import { useState, useEffect } from "react";
+import { getProductById } from "../../data/firestore";
+import { useState, useEffect, useContext } from "react";
+import cartContext from "../context/cartContext";
 import './ItemDetailContainer.css'
 import Loader from "../Loader/Loader";
 
 
-function ItemDetailContainer(props){
+function ItemDetailContainer(){
+    const {addToCart} = useContext(cartContext)
     const { productId } = useParams();
     const [ item, setItem ] = useState(null)
     
@@ -30,7 +32,7 @@ function ItemDetailContainer(props){
                     <p className="card-description"> Descripción: {item.description}</p>
                     <div className="buttons-container">
                         <button className='card-button'>-</button>
-                        <button className='card-button'>Agregar al Carrito</button>
+                        <button onClick={() => addToCart(item)} className='card-button' >Agregar al Carrito</button>
                         <button className='card-button'>+</button>
                     </div>
                 </>

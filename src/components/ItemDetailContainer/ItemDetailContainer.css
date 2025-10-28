@@ -19,5 +19,16 @@
 
 .card-description{
     color: #323137;
+    width: 80%;
+    text-align: center;
+}
+
+
+.buttons-container{
+    display: flex ;
+    
+}
+.buttons-container button {
+    margin-top: 3%;
 }
 

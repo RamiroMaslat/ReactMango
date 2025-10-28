@@ -32,5 +32,20 @@
    
 }
 .card-button{
+    margin-top: 15%;
     cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: #88932a;
+    background-color: #323137;
+}
+
+.card-button:hover{
+    background-color: #dfa10c;
+    color: #323137;
+    border-radius: 10px;
+    padding: 1%;
+    transition: 0.4s;
 }

@@ -1,21 +1,27 @@
 import Item from '../Item/Item'
 import './ItemListContainer.css'
-import getProducts, { getProductByCategory } from '../../data/mockAPI'
+import { getProducts, getProductByCategory } from '../../data/firestore';
 import { useState, useEffect } from 'react';
 import Loader from '../Loader/Loader';
 import { useParams } from 'react-router';
 
 function ItemListContainer(props) {  
-  
+  const [loading, setLoading] = useState(true)
   const [products, setProducts] = useState([])
   const { categParam } = useParams();
 
   useEffect (()=>{ 
 
+    setLoading(true);
+
     if(categParam){
       getProductByCategory(categParam)    
       .then((productListByCategory) => {
-        setProducts(productListByCategory)
+        setTimeout(() => {
+          setProducts(productListByCategory)
+          setLoading(false);
+        }, 1000);
+        
       })
       .catch((error) =>{
         alert(`${error} Error al filtrar los productos`)
@@ -23,7 +29,11 @@ function ItemListContainer(props) {
     }else{
       getProducts()    
       .then((productList) => {
-      setProducts(productList)
+        setTimeout(() => {
+          setProducts(productList)
+          setLoading(false);
+        }, 1000);
+      
       })
       .catch((error) =>{
         alert(`${error} Error al cargar los productos`)
@@ -35,10 +45,10 @@ function ItemListContainer(props) {
   
   return (
     <div>
-      {products.length === 0 ? (<Loader />):""}
+      {loading ? (<Loader />):(
       <div className='body-ItemListContainer'>        
         {products.map(product => <Item {...product} key={product.id}/>)}
-      </div>
+      </div>)}
     </div>  
   
   )

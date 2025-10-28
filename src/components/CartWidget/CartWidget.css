@@ -1,0 +1,21 @@
+
+.cartWidget-container {
+    display: flex;
+    align-items: center;
+    width: 15%;
+
+    
+}
+.cartLink{
+    margin-left: 60%;
+}
+.cart{
+    width: 30%;
+}
+.cartWidget-container {
+    color: #323137;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 30px;
+}
+

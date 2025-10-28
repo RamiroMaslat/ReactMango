@@ -1,6 +1,5 @@
-import './CartWidget'
+import CartWidget from '../CartWidget/CartWidget'
 import '../NavBar/NavBar.css'
-import CartWidget from './CartWidget'
 import { Link } from 'react-router'
 
 function NavBar(){
@@ -37,6 +36,7 @@ function NavBar(){
 
     )
 }
+
 
 export default NavBar
 
