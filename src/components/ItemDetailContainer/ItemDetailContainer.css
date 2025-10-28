@@ -26,9 +26,24 @@
 
 .buttons-container{
     display: flex ;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
     
 }
 .buttons-container button {
     margin-top: 3%;
+    
+}
+
+.add{
+    width: 137px;
+    font-weight: 600;
+}
+
+.mas, .menos{
+    width: 40px;
+    font-weight: 600;
+    font-size: 20px;
 }
 

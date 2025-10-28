@@ -31,9 +31,9 @@ function ItemDetailContainer(){
                     <p className='card-price idc-card__price'>Precio: ${item.price}</p>
                     <p className="card-description"> Descripción: {item.description}</p>
                     <div className="buttons-container">
-                        <button className='card-button'>-</button>
-                        <button onClick={() => addToCart(item)} className='card-button' >Agregar al Carrito</button>
-                        <button className='card-button'>+</button>
+                        <button className='card-button menos'>-</button>
+                        <button onClick={() => addToCart(item)} className='card-button add' >Agregar al Carrito</button>
+                        <button className='card-button mas'>+</button>
                     </div>
                 </>
                 ):(<Loader />)

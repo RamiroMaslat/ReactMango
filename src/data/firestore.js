@@ -1,7 +1,7 @@
 
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, getDoc,getDocs, addDoc, collection, query, where } from "firebase/firestore";
-import products from "./products";
+
  
 
 const firebaseConfig = {
