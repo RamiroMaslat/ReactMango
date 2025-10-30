@@ -55,6 +55,11 @@ p, h3{
     background-color: rgb(134, 6, 6);
     transition: 0.4s;
 }
+.totalBuy{
+    color: #88932a;
+    font-weight: 900;
+    font-size: 30px;
+}
 .sadFace{
     width: 15%;
 }

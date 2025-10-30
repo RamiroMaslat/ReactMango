@@ -1,8 +1,9 @@
 .form-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 30px;
-    width: 80%;
+    width: 20%;
     border: 2px #dfa10c solid ;
     border-radius: 30px;
 }
@@ -10,19 +11,23 @@
 .form-container h3{
     text-align: center;
     color: #88932a;
-    margin: 10px;
+    margin: 15px;
 }
 .label-container{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: column;    
     width: 68%;
-    gap: 10px;
+    gap: 50px;    
     margin-bottom: 30px;
+    
 }
 
 .label-container label{
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
 }
 
 .form-button_container{

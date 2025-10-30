@@ -41,6 +41,7 @@ export function CartContextProvider (props) {
         setCartItem([])
     }
 
+
     return <cartContext.Provider value={{cart: cartItems, addToCart, countItems, removeItem, clearCart}}>
         {props.children}
     </cartContext.Provider>    

@@ -24,7 +24,7 @@ function Form({ handleCheckOut }){
         <form className='form-container' onSubmit={handleSubmit}>
             <h3>Formulario de Compra</h3>
             <div className='label-container'>
-                <label>Nombre: 
+                <label>Nombre:  
                     <input onChange={handleInputChange} name="username" placeholder="Nombre" value={formData.username} type="text"></input>
                 </label>
                 <label>Mail: 
