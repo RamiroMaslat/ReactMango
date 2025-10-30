@@ -37,7 +37,11 @@ export function CartContextProvider (props) {
         setCartItem(newCartWhithDelete)
     }
 
-    return <cartContext.Provider value={{cart: cartItems, addToCart, countItems, removeItem}}>
+    function clearCart(){
+        setCartItem([])
+    }
+
+    return <cartContext.Provider value={{cart: cartItems, addToCart, countItems, removeItem, clearCart}}>
         {props.children}
     </cartContext.Provider>    
 

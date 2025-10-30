@@ -5,12 +5,12 @@ import { getFirestore, doc, getDoc,getDocs, addDoc, collection, query, where } f
  
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC-wb-kHaSvRFDwMEcQCpxjZ8Ihog4AMhg",
+  apiKey: import.meta.env.VITE_FIRESTORE_APIKEY,
   authDomain: "mangoreact-e28c2.firebaseapp.com",
-  projectId: "mangoreact-e28c2",
+  projectId: import.meta.env.VITE_FIRESTORE_PROYECT_ID,
   storageBucket: "mangoreact-e28c2.firebasestorage.app",
   messagingSenderId: "452917402273",
-  appId: "1:452917402273:web:233a9eea51c90be3da2ee0"
+  appId: import.meta.env.VITE_FIRESTORE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
@@ -49,8 +49,10 @@ export async function getProductByCategory(categParam){
 
 
 export async function createBuyOrder(orderData) {
-
-
+   
+    const ordersRef = collection(db, 'orders')
+    const newOrderDoc = await addDoc(ordersRef, orderData)
+    return newOrderDoc
 }
 
 export default app
